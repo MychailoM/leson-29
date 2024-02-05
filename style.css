@@ -1,0 +1,211 @@
+/* .box{
+    width: 250px;
+    height: 250px;
+    border: 1px solid rgb(75, 77, 103);
+    box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+            0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+            border-radius: 20px;
+}
+
+.box:hover{
+    animation-name: changeColor;
+    animation-duration: 10s;
+
+}
+@keyframes changeColor{
+    0%{
+        background-color: red;
+    }
+
+    14%{
+        background-color: orange
+    }
+
+    28%{
+        background-color: yellow;
+    }
+
+    42%{
+        background-color: green;
+    }
+
+    56%{
+        background-color: rgb(8, 140, 170);
+    }
+
+    70%{
+    
+    }
+
+    100%{
+        background-color: purple;
+    }
+}  */
+
+/* .content{
+    
+}
+
+.box{
+    width: 100px;
+    height: 100px;
+    background-color: blueviolet;
+    border-radius: 50%;
+    position: relative;
+    left: 0;
+    animation-name: changeColor;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-duration: alternate;
+
+}
+
+.content:hover .box{
+    animation-play-state: paused;
+}
+
+@keyframes changeColor{
+    0%{
+        rotate: 0deg;
+        left: -500px;
+        background-color: rgb(104, 0, 0);
+    }
+
+    50%{
+        border-radius: 4px;
+        background-color: rgb(255, 31, 31);
+    }
+
+    100%{
+        rotate: 360deg;
+        left: 100%;
+        background-color: rgb(104, 0, 0);
+    }
+} */
+
+body{
+    overflow: hidden;
+    background-color: rgba(132, 216, 255, 0.645);
+}
+
+div{
+    background-position: center top;
+    height: 1000px;
+    width: 1700px;
+    overflow: hidden;
+    background-image: url(./gambar-sungai-png-30-removebg-preview.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    z-index: 2;
+}
+
+.cloud1,
+.cloud2{
+    position: absolute;
+    top: -150px;
+    
+}
+
+@keyframes cloudOne{
+    0%{
+        left: 250px;
+    }
+
+    50%{
+        left: 1500px;
+    }
+
+    75%{
+        left: 0;
+    }
+
+    90%{
+        left: -200px;
+    }
+
+    100%{
+        left: 250px;
+    }
+}
+
+@keyframes cloudTwo{
+    0% {
+        left: 250px;
+    }
+
+    50% {
+        left: 1500px;
+    }
+
+    75% {
+        left: 0;
+    }
+
+    90% {
+        left: -200px;
+    }
+
+    100% {
+        left: 250px;
+    }
+}
+
+.cloud2{
+    top: -150px;
+    left: 750px;
+    animation-name: cloudTwo;
+    animation-duration: 50s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.cloud1{
+    top: 10px;
+    left: 250px;
+    animation-name: cloudOne;
+        animation-duration: 50s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+}
+
+
+
+.img{
+    
+    left: 750px;
+    width: 100px;
+    height: 100px;
+    position: relative;
+    animation-name: spin;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes spin{
+    0%{
+        transform: rotate(0deg);
+        bottom: -1000px;
+    }    
+
+    25%{
+        bottom: -400px;
+        
+    }
+
+    60%{
+        bottom: -400px;
+    }
+
+    80%{
+        bottom: -1000px;
+    }
+
+    100%{
+        transform: rotate(360deg);
+        bottom: -1000px;
+    }
+}
+
